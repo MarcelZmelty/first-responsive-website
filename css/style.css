@@ -1,0 +1,71 @@
+/*
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', sans-serif; (400;700)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------
+    defaults
+-------------  */
+.container{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* ----------
+    font-styling
+-------------  */
+p,
+a{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #143774;
+}
+/* ----------
+    Navigation
+-------------  */
+nav{
+    background-color: #eee;
+}
+.nav-container{
+    text-align: center;
+}
+.logo{
+    padding: 2em 0;
+}
+.tagline{
+    font-weight: 700;
+    color: #1792D2;
+}
+.menu ul{
+    padding-bottom: 1.5em;
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #707070;
+}
+@media (min-width: 720px){
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+    .menu ul{
+        padding: 0;
+        flex-direction: row;
+    }
+}
