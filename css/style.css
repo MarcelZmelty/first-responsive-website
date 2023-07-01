@@ -15,17 +15,57 @@
     width: 90%;
     margin: 0 auto;
 }
+img{
+    width: 100%;
+    display: block;
+}
 /* ----------
-    font-styling
+    default-font-styling
 -------------  */
 p,
 a{
     font-family: 'Ubuntu', sans-serif;
 }
-h1{
+h1,
+h2,
+h3{
     font-family: 'Lora', serif;
-    font-size: 2rem;
+    font-weight: 400;
     color: #143774;
+}
+p{
+    color: #777;
+}
+a{
+    color: #1792D2;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+span{
+    font-weight: 700;
+}
+.date{
+    font-size: 0.75rem;
+    color: #707070;
+}
+.tagline{
+    font-weight: 700;
+    color: #1792D2;
+}
+.continue-reading-article{
+    font-size: .875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #1792D2;
+}
+aside h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 /* ----------
     Navigation
@@ -34,14 +74,11 @@ nav{
     background-color: #eee;
 }
 .nav-container{
+    margin-bottom: 2em;
     text-align: center;
 }
 .logo{
     padding: 2em 0;
-}
-.tagline{
-    font-weight: 700;
-    color: #1792D2;
 }
 .menu ul{
     padding-bottom: 1.5em;
@@ -60,6 +97,9 @@ nav{
         display: flex;
         justify-content: space-between;
     }
+    .tagline{
+        text-align: left;
+    }
     .menu{
         display: flex;
         align-items: center;
@@ -67,5 +107,59 @@ nav{
     .menu ul{
         padding: 0;
         flex-direction: row;
+    }
+}
+/* ----------------
+     main-content
+-------------------  */
+.main-container img{
+    margin-bottom: 0.75em;
+}
+.main-content>*,
+.remaining-articles>*{
+    margin-bottom: 2.75em;
+}
+.main-article{
+    padding-bottom: 1em;
+    border-bottom: solid #ccc 1px;
+}
+.date{
+    margin-bottom: 1.5em;
+}
+h2,
+h3,
+.description{
+    padding-bottom: 1em;
+}
+.about-me,
+.recent-posts{
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border: 1em solid #eee;
+}
+.catchphrase{
+    padding: 1em 0;
+}
+.single-post{
+    margin-bottom: 1em;
+    border-bottom: solid 1px #999;
+}
+.single-post:nth-last-child(1){
+    border: none;
+}
+@media(min-width: 720px){
+    .main-container{
+        display: flex;
+        gap: 2em;
+    }
+    .article{
+        display: flex;
+        gap: 2em;
+    }
+    .article-img{
+        width: 30%;
+    }
+    .article-text{
+        width: 70%;
     }
 }
