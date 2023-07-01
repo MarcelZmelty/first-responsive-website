@@ -23,7 +23,8 @@ img{
     default-font-styling
 -------------  */
 p,
-a{
+a,
+h4{
     font-family: 'Ubuntu', sans-serif;
 }
 h1,
@@ -66,6 +67,10 @@ aside h2{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
+}
+h4,
+.copyright{
+    color: white;
 }
 /* ----------
     Navigation
@@ -162,4 +167,15 @@ h3,
     .article-text{
         width: 70%;
     }
+}
+/* ----------------
+        Footer
+-------------------  */
+footer{
+    padding: 2em;
+    background-color: #143774;
+    text-align: center;
+}
+h4{
+    padding-bottom: 0.25em;
 }
